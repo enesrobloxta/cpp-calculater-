@@ -63,7 +63,7 @@ double math( double a,double tmp,char x[]){
     cout << "Num1:" << endl;
     cin >> num1;
 
-    do{
+    
 
     do{
         cout << "Enter a process if you not gonna enter press 'a' "<<endl;
@@ -78,7 +78,9 @@ double math( double a,double tmp,char x[]){
         cout << fixed <<num1 << endl;
         
     }while(1);
-
+    
+    do{
+    
     cout << "Enter a process" << endl;
     cin >> ch2;
     if(!strcmp(ch2,"end"))
