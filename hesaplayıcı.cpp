@@ -66,12 +66,12 @@ double math( double a,double tmp,char x[]){
     
 
     do{
-        cout << "islemi giriniz(islem yapmicaksaniz a ya basiniz) "<<endl;
+        cout << "islemi giriniz(islem yapmicaksaniz e ya basiniz) "<<endl;
         cin >> ch;
         if(!strcmp(ch,"end"))
             exit(0);
         // check if the ch is equals to enter
-        if(!strcmp(ch,"a") || !strcmp(ch,"A"))
+        if(!strcmp(ch,"E") || !strcmp(ch,"e"))
             break;
 
         num1=math(num1,-1234567.1234567,ch);
@@ -97,12 +97,12 @@ double math( double a,double tmp,char x[]){
     cin >> num2;
     
     do{
-        cout << "islemi giriniz(islem yapmicaksaniz a ya basiniz) "<<endl;
+        cout << "islemi giriniz(islem yapmicaksaniz e ya basiniz) "<<endl;
         cin >> ch;
         if(!strcmp(ch,"end"))
             exit(0);
         // check if the ch is equals to enter
-        if(!strcmp(ch,"a") || !strcmp(ch,"A"))
+        if(!strcmp(ch,"E") || !strcmp(ch,"e"))
             break;
 
         num2=math(num2,-1234567.1234567,ch);
