@@ -38,7 +38,7 @@ double math( double a,double tmp,char x[]){
             cin >> tmp;
         return pow(a,tmp);
 
-    }else if(!strcmp(x,"a")){
+    }else if(!strcmp(x,"abs")){
          return abs(a);
 
     }else if(!strcmp(x,"r")){
@@ -57,36 +57,35 @@ double math( double a,double tmp,char x[]){
     cout << "Please press enter after every input, for escape type 'end' " <<endl;
     cout << "COMMANDS:" << endl <<
     "multi(*) divid(/) add(+) subtraction(-) "<< endl << 
-    "squarroot(q) power(p) abs value(a) round(r)"<< endl;
+    "squarroot(q) power(p) abs value(abs) round(r) acos(a)"<< endl;
 
 
     cout << "Num1:" << endl;
     cin >> num1;
 
-    
 
     do{
-        cout << "Enter a process if you not gonna enter press 'a' "<<endl;
+        cout << "Enter a process if you not gonna enter press 'e' "<<endl;
         cin >> ch;
         // check if the ch is equals to enter
         if(!strcmp(ch,"end"))
             exit(0);
-        if(!strcmp(ch,"a") || !strcmp(ch,"A"))
+        if(!strcmp(ch,"E") || !strcmp(ch,"e"))
             break;
 
         num1=math(num1,-1234567.1234567,ch);
         cout << fixed <<num1 << endl;
         
     }while(1);
-    
+
     do{
-    
+
     cout << "Enter a process" << endl;
     cin >> ch2;
     if(!strcmp(ch2,"end"))
         exit(0);
 
-    if(!strcmp(ch2,"a") ||!strcmp(ch2,"q")||!strcmp(ch2,"r")){
+    if(!strcmp(ch2,"abs") ||!strcmp(ch2,"q")||!strcmp(ch2,"r")){
         sum=math(num1,0,ch2);
         cout << fixed << sum << endl;
         goto s;
@@ -97,12 +96,12 @@ double math( double a,double tmp,char x[]){
     cin >> num2;
     
     do{
-        cout << "Enter a process if you not gonna enter press 'a' "<<endl;
+        cout << "Enter a process if you not gonna enter press 'e' "<<endl;
         cin >> ch;
         if(!strcmp(ch,"end"))
             exit(0);
         // check if the ch is equals to enter
-        if(!strcmp(ch,"a") || !strcmp(ch,"A"))
+        if(!strcmp(ch,"E") || !strcmp(ch,"e"))
             break;
 
         num2=math(num2,-1234567.1234567,ch);
